@@ -1,0 +1,59 @@
+<!-- This is my HTML file -->
+
+<!DOCTYPE html>
+<html lang="eng-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <title>Art Quiz</title>
+</head>
+<body>
+    <div class="row clearfix">
+        <div class="col-sm-12">
+            <!-- High Scores will show high scores card when clicked -->
+            <div id="high-scores" class="float-left">High Scores</div>
+            <!-- Timer made with javascript, floated right -->
+            <div id="time" class="float-right">Time: </div>
+         </div>
+    </div>
+    <!-- Main card with info and start button -->
+    <div class="container">
+        <div class="row card" id="start-card">
+            <div class="col-sm">
+            <div class="card-body">
+                <h2 class="card-title">Art Quiz</h2>
+                <h5 class="card-title">Test you art knowledge with this quick quiz. See how many you can get correct in 90 seconds. Good luck!</h5>
+                <button type="button" class="btn btn-info" id="start-btn">Start</button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Question cards populated with javascript-->
+        <div class="row">
+            <div class="col-sm">
+            <div class="quizDiv">
+                <h5 class="title" id="question"></h5>
+                <div id="answers">
+
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- High Scores -->
+        <div id="scores" style="display:none;">
+
+        </div>
+    </div>            
+    
+<!-- While on High Scores page, "link" says Back to Quiz -->
+<!-- Need timer on right side that will be created using javascript -->
+    
+<script src="script.js"></script>
+</body>
+</html>
