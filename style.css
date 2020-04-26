@@ -1,0 +1,38 @@
+/*This is my CSS file*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+#high-scores {
+    float: left;
+    clear: both;
+    margin: 20px;
+}
+
+#time {
+    margin: 20px;
+}
+
+.card {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+#start-card {
+    text-align: center;
+}
+
+.quizDiv {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#answers {
+    list-style-type: none;
+}
